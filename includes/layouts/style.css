@@ -1,0 +1,273 @@
+/* Resets */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html, body {
+	width:100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: square;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General */
+
+body {font-family: 'Slabo 27px', serif;}
+h1 {font-size: 2em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.15em;}
+hr {
+	padding: 0;
+	border: none;
+	border-top: medium double #333;
+	color: #333;
+	text-align: center;
+	margin: 15px 0 20px 0;
+	width: 200%;
+	position: relative;
+	left: -10%;
+}
+
+pre {	
+    background-color: #e8e8e8;
+    padding: 10px 20px;
+    white-space: pre-wrap;
+    font-family: monospace;
+}
+
+pre p {
+	margin-bottom: 10px;
+}
+	
+
+/* Layout */
+
+a {
+	color: inherit;
+}
+
+a:hover, a:active {
+	text-decoration: none;
+	color: #5C5C5C;
+}
+
+#site-header {
+	width: 100%;
+	margin-top: 10px;
+}
+
+#site-header-title {
+	text-align: center;
+}
+
+#rand-quote {
+	width: 100%;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: black;
+}
+
+#quote {
+	max-width: 1000px;
+	min-width: 200px;
+	margin: 30px auto 30px auto;
+	text-align: center;
+	color: white;
+}
+
+#quote .quote-content {
+	margin-bottom: 20px;
+	padding: 0 20px;
+	font-size: 1.3em;
+}
+
+#quote .quote-author {
+	font-style: italic;
+	padding-left: 30%;
+	font-size: .9em;
+}
+
+.content {
+	margin: 0 10px;
+}
+
+.content p {
+	margin-bottom: 5px;
+}
+
+.small {
+	font-size: .75em;
+}
+
+#foot {font-size: .75em;text-align: center;margin-top: 50px;}
+
+.error, .message {
+	margin-bottom: 20px;
+	color: white;
+	padding: 10px;
+}
+
+.error { background-color: #990000;border: 5px solid #990000; }
+.message {background-color: #004099;border: 5px solid #004099; }
+
+
+.error ul li {
+	margin: 10px 25px;
+}
+
+.button {
+	background-color: black;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 6px;
+	color: white;
+	cursor: pointer;
+	border: none;
+	padding: 10px 30px;
+	font-size: 1.5em;
+}
+
+.upload {
+	clear: right;
+	min-width: 200px;
+	padding: 25px 10px;
+}
+
+.input-header {
+	font-size: 1em;
+	display: inline-block;
+}
+
+.input-data {
+	font-size: 1.5em;
+	border: 5px solid whitesmoke;
+	margin: 5px 15px 10px 0;
+	padding: 5px;
+}
+
+.upload_label {
+	font-size: 1.5em;
+	width: 150px;
+	margin: 30px 10px;
+	display: inline-block;
+}
+
+.full_width {
+	width: 95%;
+}
+
+.most_width {
+	width: 85%;
+}
+
+.third-width {
+	width: 33%;
+}
+
+.arrest_name {
+	width: 90%;
+}
+
+.arrest_age, 
+.arrest_address_state {
+	width: 35px;
+}
+
+.arrest_address_street, {
+	width:100%;
+}
+
+.arrest_charge {
+	width:75%;
+}
+
+.arrest_charge_bail {
+	width: 100px;
+}
+
+.em_log_entry {
+	font-size: 1em;
+	border: 3px solid whitesmoke;
+	width: 90%;
+	padding: 5px;
+	margin: 5px 0;
+}
+
+.original_charge {
+	margin-top: 10px;
+	font-size: .8em;
+}
+
+#dictionary-entries {
+	width: 80%;
+	min-width: 350px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.2em;
+}
+
+tr.spacer {
+	height: 15px;
+}
+
+.odd {
+	background-color: whitesmoke;
+}
+
+.id {
+	width: 50px;
+}
+
+.include {
+	width: 80px;
+}
+
+.edit {
+	width: 40px;
+}
